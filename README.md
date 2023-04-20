@@ -1,4 +1,4 @@
 # reblytabuni.github.io
 profil 2023
 
-.[ANJAS TABUNI].(https://anjastabuni.github.io/)
+[Rebly Megib Tabuni](https://anjastabuni.github.io/)
