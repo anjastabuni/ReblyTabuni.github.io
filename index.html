@@ -8,9 +8,9 @@
     <meta name="googlebot" content="Rebly Tabuni, Rebly Megib Tabuni" />
     <meta name="google" content="nositelinkssearchbox" />
     <meta name="googlebot" content="notranslate" />
-    <title>Rebly Tabuni</title>
+    <title>Rebly Megib Tabuni</title>
     <meta name="description" content="Hallo I'AM Rebly Megib Tabuni Web Developer and Networking Administrator." />
-    <link rel="icon" href="img/profil.png" />
+    <link rel="icon" class="rounded-circle" href="img/rebly.png" />
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/355acdeb36.js" crossorigin="anonymous"></script>
     <!-- link Google Font -->
@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&family=Quicksand:wght@300&display=swap" rel="stylesheet" />
 
     <!-- link Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -33,7 +34,7 @@
     <nav class="navbar fixed-top navbar-expand-lg bg-white mb-5 py-5" id="navbar">
       <!-- container-lg start -->
       <div class="container-lg">
-        <a class="navbar-brand" href="index.html">Rebly Megib Tabuni</a>
+        <a class="navbar-brand" href="index.html">Rebly IT</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -65,13 +66,13 @@
             <div class="row">
               <!-- col start -->
               <div class="col-lg-4 col-sm-4 col-md-2">
-                <a href="#" class="fw-bold float-start mx-2" onclick="redirLinkend()">
+                <a href="#" class="fw-bold float-start mx-2" onclick="redirLinkend()" target="_blank">
                   <span class="d-block my-2" onclick="redirLinkend()"><i class="fa-brands fa-linkedin fs-1 text-muted"></i></span>
                 </a>
-                <a href="#" class="fw-bold float-start mx-2" onclick="redirInstagram()">
+                <a href="#" class="fw-bold float-start mx-2" onclick="redirInstagram()" target="_blank">
                   <span class="d-block my-2" onclick="redirInstagram()"><i class="fa-brands fa-square-instagram fs-1 text-muted"></i></span>
                 </a>
-                <a href="#" class="fw-bold" onclick="redirGithub()">
+                <a href="#" class="fw-bold" onclick="redirGithub()" target="_blank">
                   <span class="d-block my-2" onclick="redirGithub()"><i class="fa-brands fa-github fs-1 text-muted"></i></span>
                 </a>
               </div>
@@ -103,7 +104,7 @@
           <div class="col-lg-8 col-sm-10 order-1 order-md-2 py-3">
             <strong class="text-muted fs-4">About Me. <br /> </strong>
             <p class="lead text-dark text-muted fs-4">
-              Perkenalkan nama saya Rebly Megib Tabuni, saya seorang Web Developer & Junior Networking Administrator dari Jayapura. saat ini saya sedang kulia di Universitas Sains dan Teknologi Jayapura Jurusan Teknik Informatika
+              Introduce my name is Rebly Megib Tabuni, I am a Web Developer & Junior Networking Administrator from Jayapura. I am currently studying at the Jayapura University of Science and Technology, majoring in Informatics Engineering
             </p>
             <p class="fs-4 fw-bold text-muted">Skill Me :</p>
             <!-- row start -->
@@ -211,7 +212,7 @@
             <div class="shadow text-secondary py-5 px-5 mx-1 fs-6">
               <span class="d-block pb-2"><i class="fa-solid fa-code fw-bold fs-1 text-dark"></i></span>
               <strong class="text-warning fs-4"> Web Development</strong> <br />
-              Membuat dan mengembangkan Website
+              Create and develop Websites
             </div>
           </div>
           <!-- col end -->
@@ -220,7 +221,7 @@
             <div class="shadow text-secondary py-5 px-5 mx-1">
               <span class="d-block pb-2"><i class="fa-solid fa-paintbrush fw-bold fs-1 text-primary"></i></span>
               <strong class="text-warning fs-4"> Creative Design</strong> <br />
-              Membuat Poster, Kartu nama dan lain lain
+              Create posters, business cards and more
             </div>
           </div>
           <!-- col end -->
@@ -229,7 +230,7 @@
             <div class="shadow text-secondary py-5 px-5 mx-1">
               <span class="d-block pb-2"><i class="fa-solid fa-circle-nodes fw-bold fs-1 text-success"></i></span>
               <strong class="text-warning fs-4">Network</strong> <br />
-              Pemasangan jaringan dan setting jaringan
+              Network installation and network settings
             </div>
           </div>
           <!-- col end -->
@@ -242,41 +243,41 @@
     <section id="gallery">
       <div class="container-fluid text-center">
         <h2 class="display-4 fw-bold text-center text-muted mt-4">Resume</h2>
-        <strong class="text-muted text-center">Ini saya Punya Resume Pendidikan, Pengalaman dan Ikut Kursus </strong>
+        <strong class="text-muted text-center">This is my Education Resume, Experience and Taking Courses </strong>
         <div class="tab my-3">
-          <button class="tablinks" onclick="openCity(event, 'London')"><i class="fa-solid fa-graduation-cap fs-3 text-muted"></i></button>
-          <button class="tablinks" onclick="openCity(event, 'Paris')"><i class="fa-solid fa-pen fs-3 text-muted"></i></button>
-          <button class="tablinks" onclick="openCity(event, 'Tokyo')"><i class="fa-solid fa-briefcase fs-3 text-muted"></i></button>
+          <button class="tablinks" onclick="openCity(event, 'studi')"><i class="fa-solid fa-graduation-cap fs-3 text-muted"></i></button>
+          <button class="tablinks" onclick="openCity(event, 'kursus')"><i class="fa-solid fa-pen fs-3 text-muted"></i></button>
+          <button class="tablinks" onclick="openCity(event, 'kerja')"><i class="fa-solid fa-briefcase fs-3 text-muted"></i></button>
         </div>
         <!-- education start -->
-        <div id="London" class="tabcontent">
+        <div id="studi" class="tabcontent">
           <div class="timeline">
             <div class="container left">
               <div class="content text-end">
-                <h3 class="text-muted fs-4 fw-bold">Kulia</h3>
-                <p class="text-muted">Universitas Sains dan Teknologi Jayapura</p>
-                <p class="text-muted mt-2">Tahun 2018-2023</p>
+                <h3 class="text-muted fs-4 fw-bold">studying</h3>
+                <p class="text-muted">Jayapura University of Science and Technology</p>
+                <p class="text-muted mt-2">Year 2018-2023</p>
               </div>
             </div>
             <div class="container right">
               <div class="content text-start">
-                <h3 class="text-muted fs-4 fw-bold">Sekolah Menenga Kejuruan</h3>
+                <h3 class="text-muted fs-4 fw-bold">Vocational School</h3>
                 <p class="text-muted">SMK Yasores Wamena</p>
-                <p class="text-muted mt-2">Tahun 2016-2018</p>
+                <p class="text-muted mt-2">Year 2016-2018</p>
               </div>
             </div>
             <div class="container left">
               <div class="content text-end">
-                <h3 class="text-muted fs-4 fw-bold">Sekolah Menenga Pertama</h3>
+                <h3 class="text-muted fs-4 fw-bold">Junior high school</h3>
                 <p class="text-muted">SMP Negeri Bolakme</p>
-                <p class="text-muted mt-2">Tahun 20013-2016</p>
+                <p class="text-muted mt-2">Year 20013-2016</p>
               </div>
             </div>
             <div class="container right">
               <div class="content text-start">
-                <h3 class="text-muted fs-4 fw-bold">Sekolah Dasar</h3>
+                <h3 class="text-muted fs-4 fw-bold">Elementary school</h3>
                 <p class="text-muted">SD Negeri Kelila</p>
-                <p class="text-muted mt-2">Tahun 2007-2013</p>
+                <p class="text-muted mt-2">Year 2007-2013</p>
               </div>
             </div>
           </div>
@@ -284,41 +285,42 @@
         <!-- education end -->
 
         <!-- source start -->
-        <div id="Paris" class="tabcontent">
+        <div id="kursus" class="tabcontent">
           <div class="timeline">
             <div class="container left">
               <div class="content text-end">
-                <h3 class="text-muted fs-4 fw-bold">Kursus Ofline Di SaCode Papua</h3>
-                <p class="text-muted">Desain Aplikasi Ecommerse dan membuat Login Register dengan PHP MysQl</p>
-                <p class="text-muted mt-2">Tahun 2022-2023</p>
+                <h3 class="text-muted fs-4 fw-bold">Offline Courses at SaCode Papua</h3>
+                <p class="text-muted">Design E Commerce Applications and make Login Register with PHP MysQl</p>
+                <p class="text-muted mt-2">Year 2022-2023</p>
               </div>
             </div>
             <div class="container right">
               <div class="content text-start">
-                <h3 class="text-muted fs-4 fw-bold">Kursus Online Di Codepolitan</h3>
+                <h3 class="text-muted fs-4 fw-bold">Online Courses At Codepolitan</h3>
                 <p class="text-muted">Full-Stack Developer</p>
-                <p class="text-muted mt-2">Tahun 2022</p>
+                <p class="text-muted mt-2">Year 2022</p>
+                <a href="assets/Sertifikat.pdf" target="_blank" class="nav-link link-underline-none text-muted"><i class="fa-solid fa-download"></i> Certificate</a>
               </div>
             </div>
             <div class="container left">
               <div class="content text-end">
                 <h3 class="text-muted fs-4 fw-bold">VSGA Makasar</h3>
-                <p class="text-muted">Pelatihan Junior Networking Administrator</p>
-                <p class="text-muted mt-2">1 Minggu</p>
+                <p class="text-muted">Junior Networking Administrator Training</p>
+                <p class="text-muted mt-2">1 week</p>
               </div>
             </div>
             <div class="container right">
               <div class="content text-start">
                 <h3 class="text-muted fs-4 fw-bold">UPT BLK Kediri</h3>
-                <p class="text-muted">Pelatihan Ilmu Komputer Dan Jaringan</p>
-                <p class="text-muted mt-2">2 Bulan</p>
+                <p class="text-muted">Computer and Network Science Training</p>
+                <p class="text-muted mt-2">2 months</p>
               </div>
             </div>
           </div>
         </div>
         <!-- source end -->
         <!-- experience start -->
-        <div id="Tokyo" class="tabcontent">
+        <div id="kerja" class="tabcontent">
           <div class="timeline">
             <!-- <div class="container left">
               <div class="content text-end">
@@ -336,16 +338,16 @@
             </div> -->
             <div class="container left">
               <div class="content text-end">
-                <h3 class="text-muted fs-4 fw-bold">Admin Media Sosial</h3>
-                <p class="text-muted">Di Pemuda/I GIDI Immanuel Pos 7</p>
-                <p class="text-muted mt-2">Tahun 2022-2023</p>
+                <h3 class="text-muted fs-4 fw-bold">Social Media Admin</h3>
+                <p class="text-muted">At Youth/I GIDI Immanuel Post 7</p>
+                <p class="text-muted mt-2">Year 2022-2023</p>
               </div>
             </div>
             <div class="container right">
               <div class="content text-start">
-                <h3 class="text-muted fs-4 fw-bold">Freelance Teknisi Komputer</h3>
+                <h3 class="text-muted fs-4 fw-bold">Freelance Computer Technician</h3>
                 <p class="text-muted">SD Negeri Kelila</p>
-                <p class="text-muted mt-2">Tahun 2018</p>
+                <p class="text-muted mt-2">Year 2018</p>
               </div>
             </div>
           </div>
@@ -358,21 +360,21 @@
     <!-- kutipan kata -->
     <section class="my-5 py-5">
       <div class="container-lg">
-        <h2 class="display-4 fw-bold text-center my-5 text-muted">Quotes<span class="text-warning">Motivasi</span></h2>
+        <h2 class="display-4 fw-bold text-center my-5 text-muted">Quotes<span class="text-warning">Motivation</span></h2>
         <div class="slideshow-container">
           <div class="mySlides">
-            <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-            <p class="author">- John Keats</p>
+            <q>the fear of god is the beginning of knowledge but fools despise wisdom and discipline</q>
+            <p class="author">- Anjas</p>
           </div>
 
           <div class="mySlides">
-            <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-            <p class="author">- Ernest Hemingway</p>
+            <q>give thanks in everything for that is what Allah wills</q>
+            <p class="author">- Anjas</p>
           </div>
 
           <div class="mySlides">
-            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-            <p class="author">- Thomas A. Edison</p>
+            <q>Never give up "Nir ndak aret"</q>
+            <p class="author">- anjas</p>
           </div>
 
           <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -393,7 +395,7 @@
       <div class="container-fluid my-5 py-5 text-center">
         <h2 class="display-4 fw-bold text-muted">Do you have a<span class="text-warning"> Project?</span></h2>
         <strong class="text-muted fs-4">Contact Me</strong>
-        <p class="lead text-muted fs-4">Saya Bersedia Untuk Projek Lepas</p>
+        <p class="lead text-muted fs-4">I'm Available For Freelance Project</p>
         <!-- .row start -->
         <div class="row justify-content-center text-center">
           <!-- col start -->
@@ -423,7 +425,7 @@
           <!-- col start -->
           <div class="col-lg-3 col-sm-4 text-center">
             <div class="text-muted py-5 px-5 mx-1">
-              <a class="d-block pb-2"><i class="fa-solid fa-location-dot fw-bold fs-1 text-muted"></i></a>
+              <a href="https://goo.gl/maps/55vBPMLbNe7SuLTPA?coh=178572&entry=tt" class="d-block pb-2"><i class="fa-solid fa-location-dot fw-bold fs-1 text-muted"></i></a>
               <strong class="text-warning fs-5"> Visit :</strong> <br />
               Pos 7, Kabupaten Jayapura, Provinci Papua
             </div>
@@ -444,6 +446,7 @@
     <!-- footer end -->
 
     <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
   </body>
