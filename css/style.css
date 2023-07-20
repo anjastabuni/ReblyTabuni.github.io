@@ -1,5 +1,5 @@
 #navbar {
-  background-color: #2b3467; /* Black background color */
+  background-color: #000000; /* Black background color */
   position: fixed; /* Make it stick/fixed */
   top: -95px; /* Hide the navbar 50 px outside of the top view */
   width: 100%; /* Full width */
@@ -21,12 +21,13 @@
   color: black;
 }
 header {
-  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(5, 14, 51, 0.6)), url("/img/profil.jpeg");
+  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(0, 0, 0, 0.6)), url("/img/profil.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 950px;
+  height: 1200px;
 }
+
 header .row {
   display: block;
   padding-top: 400px;
@@ -59,49 +60,9 @@ header .row {
 }
 
 /* about me */
-#about {
-  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(5, 14, 51, 0.6)), url("https://media.tenor.com/-bnW58rGMxgAAAAM/shrine-anime.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 50px;
-  height: 800px;
-}
+
 #about .row {
   margin-top: 50px;
-  background-color: #2b3467;
-  color: white;
-  opacity: 1.1;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-}
-#about .row img {
-  width: 50%;
-  height: 400px;
-}
-#about .row .link {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  width: 45%;
-  border-top: 2px solid #ccc;
-}
-
-#about .row .link i {
-  cursor: pointer;
-}
-
-/* service */
-#service {
-  height: 900px;
-}
-#service .container-lg {
-  background-color: #2b3467;
-}
-#service .row .shadow {
-  border-top: 10px solid #34b3f1;
-  border-left: 3px solid #34b3f1;
-  border-right: 3px solid #34b3f1;
 }
 
 /* Style the tab */
@@ -139,7 +100,7 @@ header .row {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border-bottom: 1px solid #ccc;
+  
   border-top: none;
 }
 
@@ -153,7 +114,7 @@ header .row {
   content: "";
   position: absolute;
   width: 5px;
-  background-color: #ccc;
+  background-color: #000000;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -171,8 +132,8 @@ header .row {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
-  border: 4px solid #ffc655;
+  background-color: rgb(3, 108, 255);
+  border: 4px solid rgba(0, 106, 255, 0.336);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -220,7 +181,7 @@ header .row {
 }
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: rgba(5, 77, 233, 0.756);
   position: relative;
   border-radius: 6px;
 }
