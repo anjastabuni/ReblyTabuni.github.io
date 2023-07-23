@@ -2,14 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=google" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="Rebly Tabuni, Rebly Megib Tabuni" />
-    <meta name="googlebot" content="Rebly Tabuni, Rebly Megib Tabuni" />
-    <meta name="google" content="nositelinkssearchbox" />
-    <meta name="googlebot" content="notranslate" />
     <title>Rebly Megib Tabuni</title>
-    <meta name="description" content="Hallo I'AM Rebly Megib Tabuni Web Developer." />
     <link rel="icon" class="rounded-circle" href="img/rebly.png" />
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/355acdeb36.js" crossorigin="anonymous"></script>
@@ -17,11 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&family=Quicksand:wght@300&display=swap" rel="stylesheet" />
-
     <!-- link Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
-
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css" />
     <style>
@@ -35,7 +28,7 @@
     <nav class="navbar fixed-top navbar-expand-lg mb-5 py-3" id="navbar">
       <!-- container-lg start -->
       <div class="container-lg">
-        <a class="navbar-brand" href="index.html">Tabuni</a>
+        <a class="navbar-brand" href="index.html">Rebly Tabuni</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -60,11 +53,12 @@
     <header id="home">
       <div class="container-lg">
         <div class="row">
-          <div class="col-lg-12 col-md-12 text-center">
-            <h1 class="display-5 fw-bold text-white mt-5 pt-5">
-              <span class="text-info">Saya <i class="fa-solid fa-hands-clapping"></i> </span> Rebly Megib Tabuni
+          <div class="col-lg-12 col-md-12 ">
+            <strong class="text-white fs-3 mt-5 pt-5">Selamat Datang</strong>
+            <h1 class="display-5 fw-bold text-white ">
+              <span class="text-info">Saya<i class="fa-solid fa-hands-clapping"></i> </span> Rebly Megib Tabuni
             </h1>
-            <p class="text-white fs-4">Seorang <span class="typing-text"></span></p>
+            <p class="text-white fs-4">Seorang <span class="typing-text text-info fw-bold"></span> dari Jayapura -Papua</p>
           </div>
         </div>
       </div>
@@ -76,32 +70,25 @@
       <!-- row  start -->
       <div class="row justify-content-center">
          <!-- col start-->
-         <div class="col-lg-4 text-center col-sm-10 col-md-12 py-3 mb-5 fs-4">
-          <img class="img-fluid rounded" width="100%" src="https://th.bing.com/th/id/OIP._agLADaYSz8GdSsUFIueTQHaJq?w=138&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+         <div class="col-lg-4 text-center col-sm-10 col-md-12 py-3 mb-5 fs-4" id="image">
         </div>
         <!-- col end -->
         <!-- col start -->
-        <div class="col-lg-8 col-sm-10 col-md-12 py-3">
-          <h1 class="mt-2 fw-bold mb-4 text-center">Tentang Saya</h1>
-          <p class="fs-4" name="description">Salam Kenal nama saya <b>Rebly Megib Tabuni</b>. saya dari Papua Pegunungan dan saat ini saya Kuliah Di Universitas Sains dan Teknologi Jayapura, Jurusan Teknik Informatika</p>
-          <p class="fs-4">saya suka membangun dan mengembangkan website dengan bahasa pemrograman PHP dan JAVASCRIPT</p>
+        <div class="col-lg-7 col-sm-10 col-md-12 py-3">
+          <h1 class="mt-2 fw-bold mb-4" id="title"></h1>
+          <p class="fs-4" name="description" id="description"></p>
         </div>
         <!-- col end -->
        
       </div>
       <!-- row end -->
       <!-- row start -->
-      <div class="row">
+      <div class="row bg-dark-subtle py-5">
         <!-- col start-->
         <div class="col-lg-12 text-center col-sm-10 col-md-12 py-3 mb-5 fs-4">
-          <h1 class="mt-2 fw-bold text-center">Skill</h1>
+          <h1 class="mt-2 fw-bold text-center">Skill Tech</h1>
           <p class="mb-5">Kemampuan Teknologi yang saya miliki</p>
-          <span class="px-4 py-2 bg-dark text-white me-5"><i class="fa-brands fa-html5"></i> HTML</span>
-          <span class="px-4 py-2 bg-info text-white me-5"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-          <span class="px-4 py-2 bg-warning me-5"><i class="fa-brands fa-square-js"></i> Javascript</span>
-          <span class="px-4 py-2 bg-primary-subtle me-5"><i class="fa-brands fa-php"></i> PHP </span>
-          <span class="px-4 py-2 bg-info-subtle me-5"><i class="fa-brands fa-figma"></i> FIGMA</span>
-          <span class="px-4 py-2 bg-dark-subtle"><i class="fa-brands fa-git-alt"></i> GIT & GITHUB</span>
+          <div id="techSkill"></div>
         </div>
         <!-- col end -->
       </div>
@@ -109,34 +96,34 @@
     </section>
     <!-- about end -->
     <section id="service">
-      <div class="container-lg my-5">
+      <div class="container-lg  my-5">
         <h1 class="fw-bold text-center">Layanan</h1>
-        <p class="fs-4 mb-5 text-center">yang saya berikan</p>
+        <p class="fs-4 mb-5 text-center">apa yang saya berikan?</p>
         <div class="row justify-content-center">
           <!-- col start -->
-          <div class="col-lg-6 col-sm-5 col-md-12 text-center">
-            <div class="py-4 px-5 mx-1 fs-5 bg-dark-subtle rounded">
+          <div class="col-lg-4 col-sm-6 col-md-12 text-center">
+            <div class="py-4 px-5 mx-1 shadow rounded">
               <span class="d-block pb-2"><i class="fa-solid fa-code fw-bold fs-1"></i></span>
-              <strong class="text-warning fs-4"> Web Development</strong> <br />
-              membuat dan mengembangkan Aplikasi, Sistem informasi & lain-lain
+              <h2 class="fs-2 fw-bold"> Web Development</h2> 
+              <p class="fs-4 text-muted">Membuat  Aplikasi, Sistem informasi & lain-lain</p>
             </div>
           </div>
           <!-- col end -->
           <!-- col start -->
-          <div class="col-lg-6 col-sm-5 col-md-12 text-center">
-            <div class="shadow py-4 px-5 mx-1 fs-5 bg-info-subtle rounded">
+          <div class="col-lg-4 col-sm-6 col-md-12 text-center">
+            <div class="shadow py-4 px-5 mx-1 shadow rounded">
               <span class="d-block pb-2"><i class="fa-solid fa-paintbrush fw-bold fs-1 text-primary"></i></span>
-              <strong class="text-warning fs-4"> Desain UI UX</strong> <br />
-              Aplikasi web & Mobile
+              <h2 class=" fs-2 fw-bold"> Desain UI UX</h2> 
+              <p class="fs-4 text-muted">Aplikasi web & Mobile</p>
             </div>
           </div>
           <!-- col end -->
           <!-- col start -->
-          <div class="col-lg-6 col-sm-5 col-md-12 text-center my-5">
-            <div class="shadow py-4 px-5 mx-1 fs-5 bg-success-subtle rounded">
+          <div class="col-lg-4 col-sm-6 col-md-12 text-center ">
+            <div class="shadow py-4 px-5 mx-1  shadow rounded">
               <span class="d-block pb-2"><i class="fa-solid fa-circle-nodes fw-bold fs-1 text-success"></i></span>
-              <strong class="text-warning fs-4">Jaringan</strong> <br />
-              membangun jaringan LAN, MAN & WAN
+              <h2 class="fs-2 fw-bold">Jaringan</h2>
+              <p class="fs-4 text-muted">membangun jaringan LAN, MAN & WAN</p>
             </div>
           </div>
           <!-- col end -->
@@ -151,40 +138,24 @@
         <h1 class="fw-bold">Resume</h1>
         <span class="fs-4">Ini Resume Pendidikan, Pengalaman dan Kursus saya </span>
         <div class="tab my-3">
-          <button class="tablinks fs-4 border border-danger-subtle rounded me-5" onclick="openCity(event, 'studi')"><i class="fa-solid fa-graduation-cap fs-3 text-danger"></i> Pendidikan</button>
-          <button class="tablinks fs-4 border border-warning-subtle rounded me-5" onclick="openCity(event, 'kursus')"><i class="fa-solid fa-pen fs-3 text-warning"></i> Kursus</button>
-          <button class="tablinks fs-4 border border-success-subtle rounded" onclick="openCity(event, 'kerja')"><i class="fa-solid fa-briefcase fs-3 text-success"></i> Pengalaman</button>
+          <button class="tablinks fs-4 border  rounded me-5" onclick="openCity(event, 'studi')"><i class="fa-solid fa-graduation-cap fs-3 text-danger"></i> Pendidikan</button>
+          <button class="tablinks fs-4 border  rounded me-5" onclick="openCity(event, 'kursus')"><i class="fa-solid fa-pen fs-3 text-warning"></i> Kursus</button>
+          <button class="tablinks fs-4 border  rounded" onclick="openCity(event, 'kerja')"><i class="fa-solid fa-briefcase fs-3 text-success"></i> Pengalaman</button>
         </div>
         <!-- education start -->
         <div id="studi" class="tabcontent">
           <div class="timeline">
             <div class="container left">
-              <div class="content text-end">
-                <h3 class="fs-4 fw-bold">studying</h3>
-                <p class="fs-5">Jayapura University of Science and Technology</p>
-                <p class="text-muted mt-2">Year 2018-2023</p>
-              </div>
+              <div class="content text-end" id="eduKuliah"></div>
             </div>
             <div class="container right">
-              <div class="content text-start">
-                <h3 class="fs-4 fw-bold">Vocational School</h3>
-                <p class="fs-5">SMK Yasores Wamena</p>
-                <p class="text-muted mt-2">Year 2016-2018</p>
-              </div>
+              <div class="content text-start " id="eduSmk"></div>
             </div>
             <div class="container left">
-              <div class="content text-end">
-                <h3 class="fs-4 fw-bold">Junior high school</h3>
-                <p class="fs-5">SMP Negeri Bolakme</p>
-                <p class="text-muted mt-2">Year 20013-2016</p>
-              </div>
+              <div class="content text-end " id="eduSmp"></div>
             </div>
             <div class="container right">
-              <div class="content text-start">
-                <h3 class="fs-4 fw-bold">Elementary school</h3>
-                <p class="fs-5">SD Negeri Kelila</p>
-                <p class="text-muted mt-2">Year 2007-2013</p>
-              </div>
+              <div class="content text-start" id="eduSd"></div>
             </div>
           </div>
         </div>
@@ -194,17 +165,11 @@
         <div id="kursus" class="tabcontent">
           <div class="timeline">
             <div class="container left">
-              <div class="content text-end">
-                <h3 class="fs-4 fw-bold">Offline Courses at SaCode Papua</h3>
-                <p class="fs-5">Design E Commerce Applications and make Login Register with PHP MysQl</p>
-                <p class="text-muted mt-2">Year 2022-2023</p>
-              </div>
+              <div class="content text-end" id="soursSacode"> </div>
             </div>
             <div class="container right">
-              <div class="content text-start">
-                <h3 class="fs-4 fw-bold">Online Courses At Codepolitan</h3>
-                <p class="fs-5">Full-Stack Developer</p>
-                <p class="text-muted mt-2">Year 2022</p>
+              <div class="content text-start" id="soursCodepolitan">
+                
                 <a href="assets/Sertifikat.pdf" target="_blank" class="nav-link link-underline-none text-muted"><i class="fa-solid fa-download"></i> Certificate</a>
               </div>
             </div>
@@ -228,20 +193,6 @@
         <!-- experience start -->
         <div id="kerja" class="tabcontent">
           <div class="timeline">
-            <!-- <div class="container left">
-              <div class="content text-end">
-                <h3 class="text-muted fs-4 fw-bold">Kulia</h3>
-                <p class="text-muted">Universitas Sains dan Teknologi Jayapura</p>
-                <p class="text-muted mt-2">Tahun 2018-2023</p>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content text-start">
-                <h3 class="text-muted fs-4 fw-bold">Sekolah Menenga Kejuruan</h3>
-                <p class="text-muted">SMK Yasores Wamena</p>
-                <p class="text-muted mt-2">Tahun 2016-2018</p>
-              </div>
-            </div> -->
             <div class="container left">
               <div class="content text-end">
                 <h3 class="fs-4 fw-bold">Social Media Admin</h3>
@@ -289,7 +240,7 @@
         <!-- .row start -->
         <div class="row justify-content-around text-center">
           <!-- col start -->
-          <div class="col-lg-5 col-sm-4">
+          <div class="col-lg-5 col-sm-6">
             <div class="py-5 px-5 mx-1 fs-6">
               <a href="#" class="d-block pb-2" onclick="redirEmail() "><i class="fa-solid fa-envelope fw-bold fs-1"></i></a>
               <strong class="text-warning fs-4"> Email :</strong> <br />
@@ -313,7 +264,7 @@
             <p class="display-1 text-muted fs-1 fw-bold text-dark">&#8594;</p>
           </div> -->
           <!-- col start -->
-          <div class="col-lg-5 col-sm-4 text-center">
+          <div class="col-lg-5 col-sm-6 text-center">
             <div class=" py-5 px-5 mx-1">
               <a href="https://goo.gl/maps/55vBPMLbNe7SuLTPA?coh=178572&entry=tt" class="d-block pb-2"><i class="fa-solid fa-location-dot fw-bold fs-1 "></i></a>
               <strong class="text-warning fs-4"> Visit :</strong> <br />
@@ -356,5 +307,6 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/data.js"></script>
   </body>
 </html>
