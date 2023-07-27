@@ -52,9 +52,21 @@ var kursus = [
     description: "<p class='fs-5'>Full-Stack Developer</p>",
     date: "<p class='text-muted mt-2'>Year 2022</p>",
   },
+  {
+    title: "<h3 class='fs-4 fw-bold'>VSGA Makasar</h3>",
+    description: "<p class='fs-5'>Junior Networking Administrator Training</p>",
+    date: "<p class='text-muted mt-2'>1 week</p>",
+  },
+  {
+    title: "<h3 class='fs-4 fw-bold'>UPT BLK Kediri</h3>",
+    description: "<p class='fs-5'>Computer and Network Science Training</p>",
+    date: "<p class='text-muted mt-2'>2 months</p>   ",
+  },
 ];
 document.getElementById("soursSacode").innerHTML = kursus[0].title + kursus[0].description + kursus[0].date;
 document.getElementById("soursCodepolitan").innerHTML = kursus[1].title + kursus[1].description + kursus[1].date;
+document.getElementById("soursJna").innerHTML = kursus[2].title + kursus[2].description + kursus[2].date;
+document.getElementById("soursKediri").innerHTML = kursus[3].title + kursus[3].description + kursus[3].date;
 
 // iterasi data dari array dengan for
 var skill = [
@@ -76,3 +88,20 @@ for (i = 0; i < skill.length; i++) {
 }
 var mySkill = skill.join(" ");
 document.getElementById("techSkill").innerHTML = mySkill;
+
+// kerja
+var kerja = [
+  {
+    title: "<h3 class='fs-4 fw-bold'>Social Media Admin</h3>",
+    description: "<p class='fs-5'>At Youth/I GIDI Immanuel Post 7</p>",
+    date: "<p class='text-muted mt-2'>Year 2022-2023</p>",
+  },
+  {
+    title: "<h3 class='fs-4 fw-bold'>Freelance Computer Technician</h3>",
+    description: "<p class='fs-5'>SD Negeri Kelila</p>",
+    date: "<p class='text-muted mt-2'>Year 2018</p>",
+  },
+];
+// tampilkan
+document.getElementById("adminGidi").innerHTML = kerja[0].title + kerja[0].description + kerja[0].date;
+document.getElementById("freelance").innerHTML = kerja[1].title + kerja[1].description + kerja[1].date;
