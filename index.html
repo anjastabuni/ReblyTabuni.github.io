@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rebly Megib Tabuni</title>
-    <link rel="icon" class="rounded-circle" href="img/rebly.png" />
+    <link rel="icon" class="rounded-circle" href="assets/img/rebly.png" />
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/355acdeb36.js" crossorigin="anonymous"></script>
     <!-- link Google Font -->
@@ -13,10 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&family=Quicksand:wght@300&display=swap" rel="stylesheet" />
     <!-- link Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <style>
       * {
         font-family: montserrat;
@@ -28,7 +28,7 @@
     <nav class="navbar fixed-top navbar-expand-lg mb-5 py-3" id="navbar">
       <!-- container-lg start -->
       <div class="container-lg">
-        <a class="navbar-brand" href="index.html">Rebly Tabuni</a>
+        <span class="navbar-brand text-white fs-1" href="index.html">Rebly.</span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,11 +54,13 @@
       <div class="container-lg">
         <div class="row">
           <div class="col-lg-12 col-md-12 ">
-            <strong class="text-white fs-3 mt-5 pt-5">Selamat Datang</strong>
-            <h1 class="display-5 fw-bold text-white ">
-              <span class="text-info">Saya<i class="fa-solid fa-hands-clapping"></i> </span> Rebly Megib Tabuni
-            </h1>
-            <p class="text-white fs-4">Seorang <span class="typing-text text-info fw-bold"></span> dari Jayapura -Papua</p>
+            <h1 class="display-5 fw-bold text-white ">Rebly Megib Tabuni</h1>
+            <p class="text-white fs-4">Saya Seorang <span class="typing-text text-info fw-bold"></span></p>
+            <div class="mt-5 ">
+              <a class="me-3" href="https://www.linkedin.com/in/reblytabuni22/" target="_blank"><i class="fa-brands fa-linkedin fs-1 text-white"></i></a>
+              <a class="me-3" href="#" onclick="redirInstagram()"><i class="fa-brands fa-square-instagram fs-1 text-white"></i></a>
+              <a class="me-3" href="#" onclick="redirYoutube()"><i class="fa-brands fa-youtube fs-1 text-white"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -66,16 +68,15 @@
     <!-- article end -->
 
     <!-- about start -->
-    <section class="container-lg mt-5 pt-5" id="about">
+    <section class="container-lg pt-5" id="about">
       <!-- row  start -->
-      <div class="row justify-content-center">
+      <div class="row">
          <!-- col start-->
-         <div class="col-lg-4 text-center col-sm-10 col-md-12 py-3 mb-5 fs-4" id="image">
-        </div>
+         <div class="col-lg-6 text-center col-sm-10 col-md-12 pe-3 mb-5" id="image"></div>
         <!-- col end -->
         <!-- col start -->
-        <div class="col-lg-7 col-sm-10 col-md-12 py-3">
-          <h1 class="mt-2 fw-bold mb-4" id="title"></h1>
+        <div class="col-lg-6 col-sm-10 col-md-12">
+          <h1 class=" fw-bold mb-4" id="title"></h1>
           <p class="fs-4" name="description" id="description"></p>
         </div>
         <!-- col end -->
@@ -83,12 +84,75 @@
       </div>
       <!-- row end -->
       <!-- row start -->
-      <div class="row bg-dark-subtle py-5">
+      <div class="row shadow">
         <!-- col start-->
-        <div class="col-lg-12 text-center col-sm-10 col-md-12 py-3 mb-5 fs-4">
-          <h1 class="mt-2 fw-bold text-center">Skill Tech</h1>
-          <p class="mb-5">Kemampuan Teknologi yang saya miliki</p>
-          <div id="techSkill"></div>
+        <div class="col-lg-12  col-sm-12 col-md-12  fs-4">
+          <h1 class="mt-2 fw-bold">Skill Tech</h1>
+          <p class="mb-2">Kemampuan Teknologi yang saya miliki</p>
+          <!-- <div id="techSkill"></div> -->
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Fontend Developer
+                    </button>      
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>Pengalaman lebih dari 2 tahun</p>
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Vue Js</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Backend Developer
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>Pengalaman lebih dari 2 tahun</p>
+                      <ul>
+                        <li>PHP Native</li>
+                        <li>Framework Laravel</li>
+                        <li>MySql</li>
+                        <li>Firebase</li>
+                      </ul>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Designer
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="">
+                    <div class="accordion-body">
+                      <p>Pengalaman lebih dari 2 tahun</p>
+                      <ul>
+                        <li>Figma</li>
+                        <li>Whimsical</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <img class="img-fluid rounded" src="https://camo.githubusercontent.com/cae12fddd9d6982901d82580bdf321d81fb299141098ca1c2d4891870827bf17/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966" alt="">
+            </div>
+          </div>
+          
         </div>
         <!-- col end -->
       </div>
@@ -97,9 +161,9 @@
     <!-- about end -->
     <section id="service">
       <div class="container-lg  my-5">
-        <h1 class="fw-bold text-center">Layanan</h1>
-        <p class="fs-4 mb-5 text-center">apa yang saya berikan?</p>
-        <div class="row justify-content-center">
+        <h1 class="fw-bold ">Layanan</h1>
+        <p class="fs-4 mb-5">apa yang saya berikan?</p>
+        <div class="row">
           <!-- col start -->
           <div class="col-lg-4 col-sm-6 col-md-12 text-center">
             <div class="py-4 px-5 mx-1 shadow rounded">
@@ -133,7 +197,7 @@
     </section>
 
     <!-- Taem start -->
-    <section id="resume">
+    <!-- <section id="resume">
       <div class="container-lg my-5 text-center">
         <h1 class="fw-bold">Resume</h1>
         <span class="fs-4">Ini Resume Pendidikan, Pengalaman dan Kursus saya </span>
@@ -141,9 +205,9 @@
           <button class="tablinks fs-4 border  rounded me-5" onclick="openCity(event, 'studi')"><i class="fa-solid fa-graduation-cap fs-3 text-danger"></i> Pendidikan</button>
           <button class="tablinks fs-4 border  rounded me-5" onclick="openCity(event, 'kursus')"><i class="fa-solid fa-pen fs-3 text-warning"></i> Kursus</button>
           <button class="tablinks fs-4 border  rounded" onclick="openCity(event, 'kerja')"><i class="fa-solid fa-briefcase fs-3 text-success"></i> Pengalaman</button>
-        </div>
+        </div> -->
         <!-- education start -->
-        <div id="studi" class="tabcontent">
+        <!-- <div id="studi" class="tabcontent">
           <div class="timeline">
             <div class="container left">
               <div class="content text-end" id="eduKuliah"></div>
@@ -158,11 +222,11 @@
               <div class="content text-start" id="eduSd"></div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- education end -->
 
         <!-- source start -->
-        <div id="kursus" class="tabcontent">
+        <!-- <div id="kursus" class="tabcontent">
           <div class="timeline">
             <div class="container left">
               <div class="content text-end" id="soursSacode"> </div>
@@ -184,10 +248,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- source end -->
         <!-- experience start -->
-        <div id="kerja" class="tabcontent">
+        <!-- <div id="kerja" class="tabcontent">
           <div class="timeline">
             <div class="container left">
               <div class="content text-end" id="adminGidi">
@@ -200,10 +264,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- experience end -->
-      </div>
-    </section>
+      <!-- </div>
+    </section> -->
     <!-- Taem end -->
 
     <!-- my project -->
@@ -296,9 +360,9 @@
         fadeOut: true,
       });
     </script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/data.js"></script>
   </body>
 </html>

@@ -1,15 +1,15 @@
 // about
 var about = {
   title: "Tentang Saya",
-  image: "<img class='img-fluid rounded' width='60%'  src='https://th.bing.com/th/id/OIP._agLADaYSz8GdSsUFIueTQHaJq?w=138&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7'  alt='rebly tabuni'>",
+  image: "<img class='img-fluid rounded' width='100%'  src='https://th.bing.com/th/id/OIP.QuJItdUZ01SpAbqQpnDK0gHaGx?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7'  alt='rebly tabuni'>",
   nama: "Rebly Megib Tabuni",
-  description: "Saat ini saya dalam pertumbuhan, ketika saya terjung di bidang yang saya sukai, Setiap hari saya sibuk  mengumpulkan pengalaman berharga,",
+  description: "Saat ini saya Kuliah di Universitas Sains dan Teknologi Jayapura, Jurusan Teknik Informatika ketika mengambil bidang yang saya sukai hari-hari sibuk mengumpulkan ide-ide baru dan mencoba mewujudkannya",
   text: "Saya menemukan diri saya tertarik pada kualitas yang beresonansi dengan saya dan saya aspirasi dalam berbagai bentuk desain grafis, antarmuka pengguna, animasi interaktif. Segala sesuatu yang membangkitkan estetika",
 };
 
 document.getElementById("image").innerHTML = about.image;
 document.getElementById("title").innerText = about.title;
-document.getElementById("description").innerText = about.description + " " + about.text;
+document.getElementById("description").innerHTML = about.description + " " + "<br><br>" + about.text;
 
 // resume
 // education
@@ -105,3 +105,11 @@ var kerja = [
 // tampilkan
 document.getElementById("adminGidi").innerHTML = kerja[0].title + kerja[0].description + kerja[0].date;
 document.getElementById("freelance").innerHTML = kerja[1].title + kerja[1].description + kerja[1].date;
+
+// media sosial
+function redirInstagram() {
+  window.location.href = "https://instagram.com/cl.tabuni";
+}
+function redirYoutube() {
+  window.location.href = "https://www.youtube.com/channel/UCHYcERLN6WEr1cZmxWnfMGA";
+}
