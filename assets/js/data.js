@@ -1,7 +1,7 @@
 // about
 var about = {
   title: "Tentang Saya",
-  image: "<img class='img-fluid rounded' width='100%'  src='https://th.bing.com/th/id/OIP.QuJItdUZ01SpAbqQpnDK0gHaGx?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7'  alt='rebly tabuni'>",
+  image: "<img class='img-fluid rounded' width='100%'  src='assets/img/jadi.png'  alt='rebly tabuni'>",
   nama: "Rebly Megib Tabuni",
   description: "Saat ini saya Kuliah di Universitas Sains dan Teknologi Jayapura, Jurusan Teknik Informatika ketika mengambil bidang yang saya sukai hari-hari sibuk mengumpulkan ide-ide baru dan mencoba mewujudkannya",
   text: "Saya menemukan diri saya tertarik pada kualitas yang beresonansi dengan saya dan saya aspirasi dalam berbagai bentuk desain grafis, antarmuka pengguna, animasi interaktif. Segala sesuatu yang membangkitkan estetika",
