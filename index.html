@@ -13,8 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&family=Quicksand:wght@300&display=swap" rel="stylesheet" />
     <!-- link Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <style>
@@ -25,27 +27,35 @@
   </head>
   <body>
     <!-- nav start -->
-    <nav class="navbar fixed-top navbar-expand-lg mb-5 py-3" id="navbar">
-      <!-- container-lg start -->
+    <nav class="navbar navbar-expand-lg mb-5 py-3 sticky-top" id="navbar">
       <div class="container-lg">
-        <span class="navbar-brand text-white fs-1" href="index.html">Rebly.</span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-brand fs-1 text-white" href="index.html">Rebly.</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fs-2"><i class="fa-solid fa-bars text-white"></i></span>
         </button>
-        <!-- list nav start -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav fs-5">
-            <a class="nav-link" aria-current="page" href="#home">Beranda</a>
-            <a class="nav-link" href="#about">Tentang Saya</a>
-            <a class="nav-link" href="#service">Layanan</a>
-            <a class="nav-link" href="#resume">Resume</a>
-            <a class="nav-link" href="#projek">Proyek</a>
-            <a class="nav-link" href="#contact">Kontak</a>
-          </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav fs-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang Saya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projek">Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
         </div>
-        <!-- list nav end -->
       </div>
-      <!-- container-lg end -->
     </nav>
     <!-- nav end -->
 
@@ -72,10 +82,10 @@
       <!-- row  start -->
       <div class="row">
         <!-- col start-->
-        <div class="col-lg-6 text-center col-sm-10 col-md-12 pe-3 mb-5" id="image"></div>
+        <div class="col-lg-6 col-sm-10 col-md-12 pe-3 mb-5 order-2 order-md-1" id="image"></div>
         <!-- col end -->
         <!-- col start -->
-        <div class="col-lg-6 col-sm-10 col-md-12">
+        <div class="col-lg-6 col-sm-10 col-md-12 order-1 order-md-2">
           <h1 class="fw-bold mb-4" id="title"></h1>
           <p class="fs-4" name="description" id="description"></p>
         </div>
@@ -269,17 +279,21 @@
     <section id="projek" class="my-5 py-5">
       <div class="container-lg">
         <h1 class="fw-bold my-5">Proyek Saya</h1>
-        <div class="card" style="width: 25rem">
-          <img src="/assets/img/projek01.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <p class="card-text">
-              Website Portofolio, ini saya membuat untuk menunjukan skill dan bakat saya. <br />
-              web ini di bangun dengan teknologi berikut HTML, CSS, Javascript, dan Bootstrap
-            </p>
-          </div>
-          <div class="card-footer text-center">
-            <a href="https://anjastabuni.github.io/" class="link-underline link-underline-opacity-0 px-2 text-dark"><i class="fa-regular fa-eye"></i> Live Demo</a>
-            <a href="https://github.com/anjastabuni/anjastabuni.github.io" class="link-underline link-underline-opacity-0 px-2 text-dark"><i class="fa-brands fa-github"></i> GitHub</a>
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="card">
+              <img src="/assets/img/projek01.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Website Portofolio, ini saya membuat untuk menunjukan skill dan bakat saya. <br />
+                  web ini di bangun dengan teknologi berikut HTML, CSS, Javascript, dan Bootstrap
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://anjastabuni.github.io/" class="link-underline link-underline-opacity-0 px-2 text-dark"><i class="fa-regular fa-eye"></i> Live Demo</a>
+                <a href="https://github.com/anjastabuni/anjastabuni.github.io" class="link-underline link-underline-opacity-0 px-2 text-dark"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -296,7 +310,7 @@
           <div class="col-lg-6 col-sm-12">
             <p class="fs-5"><i class="fa-solid fa-envelope fw-bold text-dark-emphasis"></i> reblytabuni2004@gmail.com</p>
             <p class="fs-5"><i class="fa-solid fa-location-dot fw-bold text-dark-emphasis"></i> Sentani, Kabupaten Jayapura, Provinci Papua</p>
-            <div class="mt-4">
+            <div class="my-4">
               <a class="me-3" href="https://www.linkedin.com/in/reblytabuni22/" target="_blank"><i class="fa-brands fa-linkedin fs-1 text-dark-emphasis"></i></a>
               <a class="me-3" href="#" onclick="redirInstagram()"><i class="fa-brands fa-square-instagram fs-1 text-dark-emphasis"></i></a>
               <a class="me-3" href="#" onclick="redirYoutube()"><i class="fa-brands fa-youtube fs-1 text-dark-emphasis"></i></a>
@@ -305,7 +319,7 @@
           <!-- col end -->
 
           <!-- col start -->
-          <div class="col-lg-6 col-sm-12">
+          <div class="col-lg-6 col-sm-12 shadow">
             <form action="" method="get">
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label fs-5">Nama Lengkap</label>
@@ -357,8 +371,6 @@
         fadeOut: true,
       });
     </script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/data.js"></script>
   </body>
