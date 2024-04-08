@@ -1,10 +1,10 @@
 :root {
-  --background-color: #333333;
-  --text-color: #ffffff;
-}
-.dark-thema {
   --background-color: #ffffff;
   --text-color: #333333;
+}
+.dark-thema {
+  --background-color: #333333;
+  --text-color: #ffffff;
 }
 body {
   background: var(--background-color);
