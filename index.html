@@ -11,188 +11,139 @@
     <!-- link Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&family=Quicksand:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet" />
     <!-- link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <style>
       * {
-        font-family: montserrat;
+        font-family: "Ysabeau Infant", sans-serif;
       }
     </style>
   </head>
   <body>
+    <div class="toggle-btn position-fixed top-50 end-0 translate-middle-y" id="btn">
+      <button  class="border border-none rounded" id="btnColor"><img src="./assets/img/moon.png" id="btnIcon" width="40" alt="" /></button>
+    </div>
     <!-- nav start -->
-    <nav class="navbar navbar-expand-lg mb-5 py-3 sticky-top" id="navbar">
-      <div class="container-lg">
-        <span class="navbar-brand fs-1 text-white" href="index.html">Rebly.</span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="fs-2"><i class="fa-solid fa-bars text-white"></i></span>
+    <nav class="navbar navbar-expand-md position-sticky" id="navbar">
+      <div class="container-md my-3 fs-5">
+        <!-- <a class="navbar-brand" href="#">Rebly</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars" id="iconbrand"></i>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav fs-5">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Tentang Saya</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service">Layanan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projek">Proyek</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Kontak</a>
-            </li>
-          </ul>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav fs-4">
+            <a class="nav-link" aria-current="page" href="#beranda">Beranda</a>
+            <a class="nav-link" href="#tentang">Tentang</a>
+            <a class="nav-link" href="#layanan">Layanan</a>
+            <a class="nav-link" href="#proyek">Proyek</a>
+          </div>
         </div>
       </div>
     </nav>
     <!-- nav end -->
 
     <!-- article start -->
-    <header id="home">
-      <div class="container-lg">
+    <section>
+      <div class="container-md my-5" id="beranda">
         <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <h1 class="display-5 fw-bold text-white">Rebly Megib Tabuni</h1>
-            <p class="text-white fs-4">Saya Seorang <span class="typing-text text-info fw-bold"></span></p>
-            <div class="mt-5">
-              <a class="me-3" href="https://www.linkedin.com/in/reblytabuni22/" target="_blank"><i class="fa-brands fa-linkedin fs-1 text-white"></i></a>
-              <a class="me-3" href="#" onclick="redirInstagram()"><i class="fa-brands fa-square-instagram fs-1 text-white"></i></a>
-              <a class="me-3" href="#" onclick="redirYoutube()"><i class="fa-brands fa-youtube fs-1 text-white"></i></a>
+          <div class="col-md-7 col-sm-12 py-5 d-flex align-self-center">
+            <div>
+              <span class="fs-1">Halo, Saya</span> <br />
+              <h1 class="fw-bold display-3">
+                Rebly Megib Tabuni
+              </h1>
+              <p class="fs-1">Saya Seorang <span class="typing-text text-info fw-bold fs-2"></span></p>
             </div>
+          </div>
+          <div class="col-md-5 col-sm-12 py-5 py-sm-2 d-flex align-item-end">
+            <img src="/assets/img/profil1.png" class="img ms-md-auto sm-sm-start rounded-circle border-bottom border-light-subtle" style="width: 100%;" alt="" />
           </div>
         </div>
       </div>
-    </header>
+    </section>
     <!-- article end -->
 
     <!-- about start -->
-    <section class="container-lg pt-5" id="about">
+    <section class="container-md pt-5 my-5 py-5  rounded border border-light-subtle" id="tentang">
       <!-- row  start -->
-      <div class="row">
-        <!-- col start-->
-        <div class="col-lg-6 col-sm-10 col-md-12 pe-3 mb-5 order-2 order-md-1" id="image"></div>
-        <!-- col end -->
+      <div class="row justify-content-center text-center">
         <!-- col start -->
-        <div class="col-lg-6 col-sm-10 col-md-12 order-1 order-md-2">
-          <h1 class="fw-bold mb-4" id="title"></h1>
-          <p class="fs-4" name="description" id="description"></p>
+        <div class="col-md-10">
+          <h1 class="fw-bold " id="title"></h1>
+          <p class="fs-2" name="description" id="description"></p>
+          <p class="fs-2" name="description" id="description"></p>
         </div>
         <!-- col end -->
-      </div>
-      <!-- row end -->
-      <!-- row start -->
-      <div class="row shadow">
-        <!-- col start-->
-        <div class="col-lg-12 col-sm-12 col-md-12 fs-4">
-          <h1 class="mt-2 fw-bold">Skill Tech</h1>
-          <p class="mb-2">Kemampuan Teknologi yang saya miliki</p>
-          <!-- <div id="techSkill"></div> -->
-          <div class="row">
-            <div class="col-lg-8">
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Fontend Developer</button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <p>Pengalaman lebih dari 2 tahun</p>
-                      <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>Vue Js</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Backend Developer</button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <p>Pengalaman lebih dari 2 tahun</p>
-                      <ul>
-                        <li>PHP Native</li>
-                        <li>Framework Laravel</li>
-                        <li>MySql</li>
-                        <li>Firebase</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Designer</button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="">
-                    <div class="accordion-body">
-                      <p>Pengalaman lebih dari 2 tahun</p>
-                      <ul>
-                        <li>Figma</li>
-                        <li>Whimsical</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="col-md-12 my-5">
+          <div class="row justify-content-center text-center mt-5">
+            <h2 class="fw-bolder">Hard Skill</h2>
+            <div class="col-md-1 col-sm-1 col-3 my-2 py-4">
+              <img src="./assets/img/HTML.png" class="img-fluid" alt="" />
             </div>
-            <div class="col-lg-4">
-              <img
-                class="img-fluid rounded"
-                src="https://camo.githubusercontent.com/cae12fddd9d6982901d82580bdf321d81fb299141098ca1c2d4891870827bf17/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966"
-                alt=""
-              />
+            <div class="col-md-1 col-sm-1 col-3 my-2 py-4">
+              <img src="./assets/img/css.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-1 col-sm-1 col-3 my-2 py-4">
+              <img src="./assets/img/JS.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-1 col-sm-1 col-3 my-2 py-4">
+              <img src="./assets/img/bootstrap.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-1 col-sm-1 col-3 my-2 py-4">
+              <img src="./assets/img/php.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-1 col-sm-1 col-3 my-2 py-4">
+              <img src="./assets/img/MySQL.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-1 col-sm-1 col-3 my-2 py-4">
+              <img src="./assets/img/codeigniter.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-1 col-sm-1 col-3 my-2 py-4">
+              <img src="./assets/img/laravel.png" class="img-fluid" alt="" />
+            </div>
             </div>
           </div>
         </div>
-        <!-- col end -->
       </div>
       <!-- row end -->
     </section>
     <!-- about end -->
-    <section id="service">
-      <div class="container-lg my-5">
-        <h1 class="fw-bold">Layanan</h1>
-        <p class="fs-4 mb-5">apa yang saya berikan?</p>
-        <div class="row">
+    <section id="layanan">
+      <div class="container-md my-5">
+        <div class="row justify-content-center text-center my-5">
+          <h1 class="fw-bold">Layanan</h1>
+          <p class="fs-2 mb-5">apa yang saya berikan?</p>
           <!-- col start -->
           <div class="col-lg-4 col-sm-6 col-md-12 text-center">
-            <div class="py-4 px-5 mx-1 shadow rounded">
+            <div class="py-4 px-2 mx-1 rounded shadow-sm" style="height: 250px;">
               <span class="d-block pb-2"><i class="fa-solid fa-code fw-bold fs-1"></i></span>
-              <h2 class="fs-2 fw-bold">Web Development</h2>
-              <p class="fs-4 text-muted">Membuat Aplikasi, Sistem informasi & lain-lain</p>
+              <h2 class="fw-bold">Web Development</h2>
+              <p class="fs-2">Membuat Aplikasi, Sistem informasi & lain-lain</p>
             </div>
           </div>
           <!-- col end -->
           <!-- col start -->
           <div class="col-lg-4 col-sm-6 col-md-12 text-center">
-            <div class="shadow py-4 px-5 mx-1 shadow rounded">
+            <div class="py-4 px-2 mx-1 rounded shadow-sm" style="height: 250px;">
               <span class="d-block pb-2"><i class="fa-solid fa-paintbrush fw-bold fs-1 text-primary"></i></span>
-              <h2 class="fs-2 fw-bold">Desain UI UX</h2>
-              <p class="fs-4 text-muted">Aplikasi web & Mobile</p>
+              <h2 class="fw-bold">Desain UI UX</h2>
+              <p class="fs-2">Aplikasi web & Mobile</p>
             </div>
           </div>
           <!-- col end -->
           <!-- col start -->
           <div class="col-lg-4 col-sm-6 col-md-12 text-center">
-            <div class="shadow py-4 px-5 mx-1 shadow rounded">
+            <div class="py-4 px-2 mx-1  rounded shadow-sm" style="height: 250px;">
               <span class="d-block pb-2"><i class="fa-solid fa-circle-nodes fw-bold fs-1 text-success"></i></span>
-              <h2 class="fs-2 fw-bold">Jaringan</h2>
-              <p class="fs-4 text-muted">membangun jaringan LAN, MAN & WAN</p>
+              <h2 class="fw-bold">Jaringan</h2>
+              <p class="fs-2">membangun jaringan LAN, MAN & WAN</p>
             </div>
           </div>
           <!-- col end -->
@@ -201,97 +152,20 @@
       </div>
     </section>
 
-    <!-- Taem start -->
-    <!-- <section id="resume">
-      <div class="container-lg my-5 text-center">
-        <h1 class="fw-bold">Resume</h1>
-        <span class="fs-4">Ini Resume Pendidikan, Pengalaman dan Kursus saya </span>
-        <div class="tab my-3">
-          <button class="tablinks fs-4 border  rounded me-5" onclick="openCity(event, 'studi')"><i class="fa-solid fa-graduation-cap fs-3 text-danger"></i> Pendidikan</button>
-          <button class="tablinks fs-4 border  rounded me-5" onclick="openCity(event, 'kursus')"><i class="fa-solid fa-pen fs-3 text-warning"></i> Kursus</button>
-          <button class="tablinks fs-4 border  rounded" onclick="openCity(event, 'kerja')"><i class="fa-solid fa-briefcase fs-3 text-success"></i> Pengalaman</button>
-        </div> -->
-    <!-- education start -->
-    <!-- <div id="studi" class="tabcontent">
-          <div class="timeline">
-            <div class="container left">
-              <div class="content text-end" id="eduKuliah"></div>
-            </div>
-            <div class="container right">
-              <div class="content text-start " id="eduSmk"></div>
-            </div>
-            <div class="container left">
-              <div class="content text-end " id="eduSmp"></div>
-            </div>
-            <div class="container right">
-              <div class="content text-start" id="eduSd"></div>
-            </div>
-          </div>
-        </div> -->
-    <!-- education end -->
-
-    <!-- source start -->
-    <!-- <div id="kursus" class="tabcontent">
-          <div class="timeline">
-            <div class="container left">
-              <div class="content text-end" id="soursSacode"> </div>
-            </div>
-            <div class="container right">
-              <div class="content text-start" id="soursCodepolitan">
-                
-                <a href="assets/Sertifikat.pdf" target="_blank" class="nav-link link-underline-none text-muted"><i class="fa-solid fa-download"></i> Certificate</a>
-              </div>
-            </div>
-            <div class="container left">
-              <div class="content text-end" id="soursJna">
-                
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content text-start" id="soursKediri">
-                
-              </div>
-            </div>
-          </div>
-        </div> -->
-    <!-- source end -->
-    <!-- experience start -->
-    <!-- <div id="kerja" class="tabcontent">
-          <div class="timeline">
-            <div class="container left">
-              <div class="content text-end" id="adminGidi">
-                
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content text-start" id="freelance">
-                
-              </div>
-            </div>
-          </div>
-        </div> -->
-    <!-- experience end -->
-    <!-- </div>
-    </section> -->
-    <!-- Taem end -->
-
     <!-- my project -->
-    <section id="projek" class="my-5 py-5">
-      <div class="container-lg">
-        <h1 class="fw-bold my-5">Proyek Saya</h1>
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="card">
-              <img src="/assets/img/projek01.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Website Portofolio, ini saya membuat untuk menunjukan skill dan bakat saya. <br />
-                  web ini di bangun dengan teknologi berikut HTML, CSS, Javascript, dan Bootstrap
-                </p>
+    <section id="proyek">
+      <div class="container-md my-5 py-5">
+        <div class="row justify-content-center text-center">
+          <h1 class="fw-bold mb-5">Proyek Saya</h1>
+          <div class="col-md-4">
+            <div class="border border-light-subtle rounded py-4 px-4">
+              <img src="/assets/img/projek01.png" class="card-img-top rounded" alt="..." />
+              <div class="card-body pt-4">
+                <p class="fs-5">Website Portofolio, ini saya membuat untuk menunjukan skill dan bakat saya. web ini di bangun dengan teknologi berikut HTML, CSS, Javascript, dan Bootstrap</p>
               </div>
               <div class="card-footer text-center">
-                <a href="https://anjastabuni.github.io/" class="link-underline link-underline-opacity-0 px-2 text-dark"><i class="fa-regular fa-eye"></i> Live Demo</a>
-                <a href="https://github.com/anjastabuni/anjastabuni.github.io" class="link-underline link-underline-opacity-0 px-2 text-dark"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://anjastabuni.github.io/" class="link-underline link-underline-opacity-0 px-2"><i class="fa-regular fa-eye"></i> Live Demo</a>
+                <a href="https://github.com/anjastabuni/anjastabuni.github.io" class="link-underline link-underline-opacity-0 px-2 "><i class="fa-brands fa-github"></i> GitHub</a>
               </div>
             </div>
           </div>
@@ -300,60 +174,29 @@
     </section>
     <!-- // my project -->
 
-    <!-- contact start -->
-    <section id="contact" class="my-5 py-5">
-      <div class="container-lg my-5 py-5">
-        <h1 class="fw-bold pb-3">Kontak saya</h1>
-        <!-- .row start -->
-        <div class="row">
-          <!-- col start -->
-          <div class="col-lg-6 col-sm-12">
-            <p class="fs-5"><i class="fa-solid fa-envelope fw-bold text-dark-emphasis"></i> reblytabuni2004@gmail.com</p>
-            <p class="fs-5"><i class="fa-solid fa-location-dot fw-bold text-dark-emphasis"></i> Sentani, Kabupaten Jayapura, Provinci Papua</p>
-            <div class="my-4">
-              <a class="me-3" href="https://www.linkedin.com/in/reblytabuni22/" target="_blank"><i class="fa-brands fa-linkedin fs-1 text-dark-emphasis"></i></a>
-              <a class="me-3" href="#" onclick="redirInstagram()"><i class="fa-brands fa-square-instagram fs-1 text-dark-emphasis"></i></a>
-              <a class="me-3" href="#" onclick="redirYoutube()"><i class="fa-brands fa-youtube fs-1 text-dark-emphasis"></i></a>
-            </div>
-          </div>
-          <!-- col end -->
-
-          <!-- col start -->
-          <div class="col-lg-6 col-sm-12 shadow">
-            <form action="" method="get">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label fs-5">Nama Lengkap</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" />
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label fs-5">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" />
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label fs-5">Pesan</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-              <div class="mb-3 text-center">
-                <button type="submit" class="btn btn-primary fs-5">Kirim</button>
-              </div>
-            </form>
-          </div>
-          <!-- col end -->
-        </div>
-        <!-- row end -->
-      </div>
-    </section>
-    <!-- contact end -->
-
     <!-- footer  start-->
-    <footer class="container-lg py-4 border-top border-success-subtle">
-      <p class="text-center fs-4">
-        <script type="text/javascript">
-          var year = new Date();
-          document.write(year.getFullYear());
-        </script>
-        &#169; Rebly Megib Tabuni. All right reserved
-      </p>
+    <footer class="container-md py-4 rounded shadow">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h3 class="fw-bold pb-3">Kontak saya</h3>
+          <p class="fs-5"><i class="fa-solid fa-envelope fw-bold text-dark-emphasis"></i> reblytabuni2004@gmail.com</p>
+          <p class="fs-5"><i class="fa-solid fa-location-dot fw-bold text-dark-emphasis"></i> Sentani, Kabupaten Jayapura, Provinci Papua</p>
+          <div class="my-4">
+            <a class="me-3" href="https://www.linkedin.com/in/reblytabuni22/" target="_blank"><i class="fa-brands fa-linkedin fs-1 text-dark-emphasis"></i></a>
+            <a class="me-3" href="#" onclick="redirInstagram()"><i class="fa-brands fa-square-instagram fs-1 text-dark-emphasis"></i></a>
+            <a class="me-3" href="#" onclick="redirYoutube()"><i class="fa-brands fa-youtube fs-1 text-dark-emphasis"></i></a>
+          </div>
+        </div>
+        <div class="col-md-12 border-top border-light-subtle">
+          <p class="text-center fs-4">
+            <script type="text/javascript">
+              var year = new Date();
+              document.write(year.getFullYear());
+            </script>
+            &#169; Rebly Megib Tabuni. All right reserved
+          </p>
+        </div>
+      </div>
     </footer>
     <!-- footer end -->
 
@@ -362,14 +205,28 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed(".typing-text", {
-        strings: ["Front-end Developer", "UI/UX Design", "Full-stack Developer", "Freelancer"],
+        strings: ["Web Developer", "UI/UX Design", "Freelancer"],
         typeSpeed: 100,
         loop: true,
         showCursor: true,
-        cursorChar: "|",
+        cursorChar: " ",
         startDelay: 1000,
         fadeOut: true,
       });
+      let btn = document.getElementById("btn");
+      let btnIcon = document.getElementById("btnIcon");
+
+      btn.onclick = function () {
+        document.body.classList.toggle("dark-thema");
+
+        if (document.body.classList.contains("dark-thema")) {
+          btnIcon.src = "./assets/img/sun.png";
+          btnText.innerHTML = "Light";
+        } else {
+          btnIcon.src = "assets/img/moon.png";
+          btnText.innerHTML = "Dark";
+        }
+      };
     </script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/data.js"></script>

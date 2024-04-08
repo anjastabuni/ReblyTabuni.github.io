@@ -1,15 +1,15 @@
 // about
 var about = {
   title: "Tentang Saya",
-  image: "<img class='img-fluid rounded' width='100%'  src='assets/img/jadi.png'  alt='rebly tabuni'>",
+  image: "<img class='img-fluid rounded' width='100%'  src='assets/img/profil.png'  alt='rebly tabuni'>",
   nama: "Rebly Megib Tabuni",
   description: "Saat ini saya Kuliah di Universitas Sains dan Teknologi Jayapura, Jurusan Teknik Informatika ketika mengambil bidang yang saya sukai hari-hari sibuk mengumpulkan ide-ide baru dan mencoba mewujudkannya",
-  text: "Saya menemukan diri saya tertarik pada kualitas yang beresonansi dengan saya dan saya aspirasi dalam berbagai bentuk desain grafis, antarmuka pengguna, animasi interaktif. Segala sesuatu yang membangkitkan estetika",
+  text: "Salam Kenal nama saya Rebly Megib Tabuni. saya seorang Freelancer Web Developer, UI/UX Design dan saya tertarik dengan berbagai bentuk desain Web, antarmuka pengguna dan animasi interaktif.",
 };
 
-document.getElementById("image").innerHTML = about.image;
+// document.getElementById("image").innerHTML = about.image;
 document.getElementById("title").innerText = about.title;
-document.getElementById("description").innerHTML = about.description + " " + "<br><br>" + about.text;
+document.getElementById("description").innerHTML = about.text;
 
 // resume
 // education

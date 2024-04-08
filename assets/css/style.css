@@ -1,33 +1,58 @@
+:root {
+  --background-color: #333333;
+  --text-color: #ffffff;
+}
+.dark-thema {
+  --background-color: #ffffff;
+  --text-color: #333333;
+}
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.8s, color 0.8s;
+}
+
 #navbar {
-  background-color: #001c30;
+  background-color: var(--background-color);
+  transition: background 0.8s, color 0.8s;
   position: fixed; /* Make it stick/fixed */
-  top: -95px; /* Hide the navbar 50 px outside of the top view */
+  top: -95px;
   width: 100%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 /* Style the navbar links */
 #navbar a {
+  color: var(--text-color);
   float: left;
   display: block;
-  color: white;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
+}
+#btnColor {
+  background-color: var(--background-color);
+  transition: background 0.8s, color 0.8s;
+  color: var(--text-color);
+}
+#iconbrand {
+  background-color: var(--background-color);
+  transition: background 0.8s, color 0.8s;
+  color: var(--text-color);
 }
 
 /* #navbar a:hover {
   background-color: #ddd;
   color: black;
 } */
-header {
+/* header {
   background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(0, 0, 0, 0.6)), url("../img/IMG_20211214_060331.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 900px;
-}
+} */
 /* @media screen and (min-width: 480px) {
   header {
     height: 900px;
